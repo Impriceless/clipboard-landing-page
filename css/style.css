@@ -31,10 +31,10 @@ body {
 .container--large {
   max-width: 116rem;
 }
-@media (max-width: 1190px) {
+@media (max-width: 1260px) {
   .container--large {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
 .container--medium {
@@ -42,8 +42,8 @@ body {
 }
 @media (max-width: 870px) {
   .container--medium {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
 .container--small2 {
@@ -64,10 +64,22 @@ body {
     padding-right: 3rem !important;
   }
 }
+@media (max-width: 400px) {
+  .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
 @media (max-width: 1000px) {
   .container--padding {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .container--padding {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
 }
 
@@ -297,6 +309,12 @@ footer {
   margin-left: 9.5rem;
   flex: 0 0 25%;
 }
+@media (max-width: 1200px) {
+  .section--features .features {
+    margin-left: 5.5rem;
+    flex: 0 0 40%;
+  }
+}
 @media (max-width: 1000px) {
   .section--features .features {
     flex: 0 0 100%;
@@ -373,9 +391,13 @@ footer {
 
 .feetures {
   margin-top: 8rem;
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fill, minmax(35.5rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.feetures .feeture {
+  flex: 0 0 35rem;
 }
 .feetures .feeture__img {
   margin-bottom: 3rem;

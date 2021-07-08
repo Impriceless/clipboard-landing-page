@@ -39,17 +39,17 @@ body {
     &--large {
         max-width: $container-large;
         
-        @include respond(1190px) {
-            padding-left: 3rem !important;
-            padding-right: 3rem !important;
+        @include respond(1260px) {
+            padding-left: 5rem !important;
+            padding-right: 5rem !important;
         }
     }
     &--medium {
         max-width: $container-medium;
 
         @include respond(870px) {
-            padding-left: 3rem !important;
-            padding-right: 3rem !important;
+            padding-left: 5rem !important;
+            padding-right: 5rem !important;
         }
     }
     &--small2 {
@@ -68,10 +68,18 @@ body {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
+    @include respond(400px) {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
     &--padding {
         @include respond(1000px) {
             padding-left: 3rem !important;
             padding-right: 3rem !important;
+        }
+        @include respond(400px) {
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
         }
     }
     
