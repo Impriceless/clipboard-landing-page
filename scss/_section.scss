@@ -1,0 +1,125 @@
+.section {
+
+    &--track {
+        padding-bottom: 8.5rem;
+
+        @include respond(phone) {
+            padding-bottom: 5.5rem; 
+        }
+    }
+
+    &--features {
+        text-align: left;
+        display: flex;
+        align-items: center;
+       
+
+        &__img-container {
+            flex: 0 0 50%;
+
+            @include respond(1000px) {
+                flex: 0 0 100%;
+            }
+        }
+        &__img {
+            width: 107%;
+            margin-left: -5rem;
+
+            @include respond(1000px) {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        .features {
+            margin-left: 9.5rem;
+            flex: 0 0 25%;
+
+            @include respond(1000px) {
+                flex: 0 0 100%;
+                margin-left: 0;
+                margin-top: 9.5rem;
+            }
+        }
+
+        @include respond(1000px) {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    &--access {
+        margin-top: 16rem;
+
+
+        @include respond(phone) {
+            margin-top: 6rem;
+        }
+        
+        &__text {
+            margin-bottom: 11.5rem;
+        }
+        &__image {
+                width: 100%;
+        }
+    }
+
+    &--supercharge, &--companies {
+        padding: 8rem 0;
+
+        @include respond(phone) {
+            padding: 6rem 0;  
+        }
+    }
+    &--companies {
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(1200px) {
+            gap: 0;
+            justify-content: space-between;
+        }
+
+        @include respond(tab) {
+            gap: 10rem;
+            flex-direction: column;
+            width: auto;
+        }
+
+        .company__logo {
+            @include respond(1200px) {
+                width: 10rem;
+            }
+            @include respond(tab) {
+                width: auto;
+            }
+        }
+    }
+    &--available {
+        padding: 8rem 0 12rem;
+
+        @include respond(phone) {
+            padding: 6rem 0 8rem;  
+        }
+    }
+
+}
+
+.feetures {
+    margin-top: 8rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(35.5rem, 1fr));
+
+    .feeture {
+        &__img {
+            margin-bottom: 3rem;
+            height: 3rem;
+        }
+        .paragraph {
+            margin-bottom: 0;
+        }
+    }
+}

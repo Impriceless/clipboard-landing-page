@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+$dfont: 1.8rem;
+$scyan: hsl(171, 66%, 44%);
+$lblue: hsl(233, 100%, 69%);
+$dblue: hsl(210, 10%, 33%);
+$gblue: hsl(201, 11%, 66%);
+$container-small: 70rem;
+$container-small2: 73.5rem;
+$container-medium: 84.5rem;
+$container-large: 116rem;
+
+::selection {
+    background-color: $dblue;
+    color: white;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: $dfont;
+    font-weight: 400;
+    background-color: #fff;
+    color: $dblue;
+    text-align: center;
+    line-height: 1.5;
+}
+.container {
+    margin: 0 auto;
+
+    &--large {
+        max-width: $container-large;
+        
+        @include respond(1190px) {
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+    }
+    &--medium {
+        max-width: $container-medium;
+
+        @include respond(870px) {
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+    }
+    &--small2 {
+        max-width: $container-small2;
+
+        @include respond(785px) {
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+    }
+    &--small {
+        max-width: $container-small;
+    }
+
+    @include respond(750px) {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    &--padding {
+        @include respond(1000px) {
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+    }
+    
+}
+

@@ -1,0 +1,38 @@
+.buttons-container {
+    justify-content: center;
+    display: flex;
+    gap: 1.2rem;  
+
+    @include respond(phone) {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2.5rem;
+        max-width: 35rem;
+        margin: 0 auto;
+    } 
+}
+.button {
+    padding: 1.6rem 3.9rem 1.2rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: opacity 200ms ease-in-out;
+
+    &--green {
+        background: $scyan;
+        border-bottom: 4.5px solid hsl(171, 66%, 39%);
+
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &--blue {
+        background: $lblue;
+        border-bottom: 4.5px solid hsl(233, 100%, 63%);
+
+        &:hover {
+            opacity: .95;
+        }
+    }
+}
